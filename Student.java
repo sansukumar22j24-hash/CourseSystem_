@@ -1,6 +1,6 @@
 package CourseSystem_;
 
-import CourseEnrollmentSystem.OfflineCourse;
+
 
 public  class Student implements StudentInterface{
     private int duration;
