@@ -1,12 +1,12 @@
 package CourseSystem_;
 
-public class Student {
+import CourseEnrollmentSystem.OfflineCourse;
+
+public  class Student implements StudentInterface{
     private int duration;
     private String courseType;
-//    private String courseId;
-//    private int fee;
-    private OnlineCourse onlineCourse;
-    private OfflineCourse offlineCourse;
+    private CourseInterface onlineCourse;
+    private CourseInterface offlineCourse;
 
   public Student(int duration,String courseType){
       this.duration=duration;
@@ -32,19 +32,19 @@ public class Student {
         this.duration = duration;
     }
 
-    public OnlineCourse getOnlineCourse() {
+    public CourseInterface getOnlineCourse() {
         return onlineCourse;
     }
 
-    public void setOnlineCourse(OnlineCourse onlineCourse) {
+    public void setOnlineCourse(CourseInterface onlineCourse) {
         this.onlineCourse = onlineCourse;
     }
 
-    public OfflineCourse getOfflineCourse() {
+    public CourseInterface getOfflineCourse() {
         return offlineCourse;
     }
 
-    public void setOfflineCourse(OfflineCourse offlineCourse) {
+    public void setOfflineCourse(CourseInterface offlineCourse) {
         this.offlineCourse = offlineCourse;
     }
 }

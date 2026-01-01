@@ -1,12 +1,11 @@
 package CourseSystem_;
 
-public abstract class Course {
+public abstract class Course  implements CourseInterface {
     private String courseId;
     private int fee;
-    private Student student;
+    private StudentInterface student;
     public void enroll(){
         this.fee=student.getDuration()*500;
-
         System.out.println(student.getDuration());
 
     }
@@ -30,11 +29,11 @@ public abstract class Course {
     }
 
 
-    public Student getStudent() {
+    public StudentInterface getStudent() {
         return student;
     }
 
-    public void setStudent(Student student) {
+    public void setStudent(StudentInterface student) {
         this.student = student;
     }
 }

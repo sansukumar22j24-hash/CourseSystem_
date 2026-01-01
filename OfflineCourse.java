@@ -1,14 +1,15 @@
 package CourseSystem_;
 
-public class OfflineCourse extends Course{
-    private String courseId;
-    private int fee;
-    private Student student;
+public class OfflineCourse extends Course implements OfflineInterface{
+//    private String courseId;
+//    private int fee;
+
     public OfflineCourse (){
 
     }
-    public OfflineCourse ( String courseId,int fee){
-        this.courseId=courseId;
-        this.fee=fee;
+    public OfflineCourse ( String courseId,int fee){   //,Student student){
+        this.setCourseId(courseId);
+        this.setFee(fee);
+        //this.setStudent(student);
     }
 }
